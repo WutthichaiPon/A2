@@ -69,15 +69,15 @@ void main() {
     while (1>0) {
       stdout.write("Play again? (Y/N): ");
       again = stdin.readLineSync();
-      if (again == "y") {
+      if (again == "y" || again =="Y" ) {
         break;
-      } else if (again == "n") {
+      } else if (again == "n" || again == "N" ) {
         break;
       } else {
         continue;
       }
     }
-  } while (again == "y");
+  } while (again == "y" || again == "Y"  );
   print("You've played $round games");
 
   for(var i=0 ; i < myList.length  ; i++){
